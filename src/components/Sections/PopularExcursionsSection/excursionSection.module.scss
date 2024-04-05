@@ -1,0 +1,110 @@
+.sliderBtnWrapper {
+  height: 100%;
+  width: 4rem;
+  z-index: 4;
+}
+.emptyText {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.excursionByCityItem {
+  width: 100% !important;
+}
+.sliderBtnLeft {
+  left: -1.5rem;
+}
+.sliderBtnRight {
+  right: -1.5rem;
+}
+.excursionsList {
+  gap: 4.5rem;
+}
+@media (max-width: 1400px) {
+  .sliderBtnWrapper {
+    svg {
+      height: 3.6rem;
+      width: 3.6rem;
+    }
+  }
+  .sliderBtnLeft {
+    left: -2rem;
+  }
+  .sliderBtnRight {
+    right: -.6rem
+  }
+  .excursionsList {
+    gap: 5.5rem;
+  }
+
+}
+@media (max-width: 1100px) {
+  .excursionsList {
+    gap: 3rem;
+  }
+}
+.popularPlaces {
+  padding-bottom: 3rem;
+}
+.popularPlaces::-webkit-scrollbar {
+  display: none;
+}
+
+.placeItem {
+  align-items: center;
+  position: relative;
+  .placeName {
+    font-size: 1.6rem;
+    text-wrap: nowrap;
+    transition: .3s color;
+    font-weight: 600;
+  }
+  .placeImg {
+    height: 5rem;
+    border-radius: 50%;
+    min-width: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #414141;
+  }
+
+}
+@media (max-width: 600px) {
+  .placeItem {
+    .placeName {
+      font-size: 1.4rem !important;
+      transition: .3s color;
+      font-weight: 600;
+    }
+    .placeImg {
+      height: 4rem;
+      border-radius: 50%;
+      min-width: 4rem;
+    }
+
+  }
+}
+@media (max-width: 440px) {
+  .placeItem {
+    .placeName {
+      font-size: 1.3rem !important;
+      transition: .3s color;
+      font-weight: 600;
+    }
+    .placeImg {
+      height: 3.8rem;
+      border-radius: 50%;
+      min-width: 3.8rem;
+    }
+
+  }
+}
+.placeItemActive {
+  .placeName {
+    color: #D900b6;
+  }
+
+}
+.mobileExcrusionsList::-webkit-scrollbar {
+  display: none;
+}

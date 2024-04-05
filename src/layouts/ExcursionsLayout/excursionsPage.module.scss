@@ -1,0 +1,29 @@
+.count {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.excursionItem {
+  width: 100%;
+}
+.delete {
+  z-index: 2;
+  height: 4.1rem;
+  width: 4.1rem;
+  background-color: white;
+  top: -1rem;
+  right: -1rem;
+}
+.excursionsLayoutList {
+  gap: 4.5rem;
+}
+
+@media (max-width: 1400px) {
+  .excursionsLayoutList {
+    gap: 5.5rem;
+  }
+}
+@media (max-width: 1100px) {
+  .excursionsLayoutList {
+    gap: 3rem;
+  }
+}

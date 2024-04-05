@@ -1,0 +1,73 @@
+.excursionTitle {
+  font-size: 1.8rem;
+  color: #959294;
+}
+.peopleCount {
+  border-radius: 50%;
+  border: 2px solid #D900b6;
+  overflow: hidden;
+  height: 3.1rem;
+  width: 3.1rem;
+  input {
+    font-size: 1.6rem;
+    max-width: 70%;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+.peopleCountLabel {
+  color: #4d4d4d;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.priceBlock {
+  b {
+    font-size: 3.2rem;
+    color: #D900B6;
+  }
+  .for {
+    font-size: 1.6rem;
+    color: #959294;
+  }
+}
+.orderMaxCountText {
+  font-weight: 500;
+  color: #959294;
+  font-size: 1.2rem !important;
+}
+.orderButton {
+  padding: 1.5rem;
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+@media (max-width: 640px) {
+  .peoples {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .orderWindow {
+    gap: 2rem;
+  }
+  .orderFields {
+    flex-wrap: wrap;
+  }
+  .form {
+    gap: 1rem;
+  }
+  .orderButton {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 450px) {
+  .priceBlock {
+    b {
+      font-size: 2.4rem;
+      color: #D900B6;
+    }
+    .for {
+      font-size: 1.4rem;
+      color: #959294;
+    }
+  }
+}

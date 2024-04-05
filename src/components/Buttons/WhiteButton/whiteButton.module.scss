@@ -1,0 +1,19 @@
+
+
+.whiteButton {
+  color: #D900B6;
+  border-radius: 4rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.1);
+  padding: 1.6rem 2.5rem;
+  font-size: 1.8rem;
+  max-width: fit-content;
+  background: white;
+
+}
+@media (max-width: 450px) {
+  .whiteButton {
+    font-size: 1.4rem;
+  }
+}

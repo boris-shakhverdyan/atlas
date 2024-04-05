@@ -1,0 +1,94 @@
+.authWindow {
+  max-height: 90vh;
+}
+.aboutGuide {
+  height: 16rem;
+}
+.authWindow::-webkit-scrollbar {
+  width: 4px;
+  background: rgba(0, 0, 0, 0.2);
+}
+.authWindow::-webkit-scrollbar-thumb {
+  background: gray;
+}
+.btn {
+  min-width: 55%;
+  display: flex;
+}
+.toAltWindow {
+  color: #d900b6;
+  cursor: pointer;
+}
+.altText {
+  font-size: 1.4rem;
+}
+.registerWay {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+@media (max-width: 1050px) {
+  .altText {
+    p {
+      font-size: 1.4rem !important;
+    }
+  }
+}
+.authInputWrapper {
+}
+@media (max-width: 640px) {
+  .altText {
+    p {
+      font-size: 1.4rem !important;
+    }
+  }
+  .authInputWrapper {
+    padding: 1.5rem;
+  }
+  .authWindow {
+    max-width: 90% !important;
+  }
+}
+.authFields {
+}
+@media (max-width: 560px) {
+  .authFields {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .altText {
+    p {
+      font-size: 1.2rem !important;
+    }
+  }
+  .authInputWrapper {
+    padding: 1.2rem;
+  }
+  .authWindow {
+    max-width: 100vw !important;
+    height: 100vh;
+    max-height: unset;
+    border-radius: unset !important;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+  .btn {
+    padding: 1.4rem;
+    font-size: 1.4rem;
+    width: 100%;
+  }
+  .authBottom {
+    flex-wrap: wrap;
+  }
+  .altText {
+    flex-direction: row;
+    gap: unset;
+    width: 100%;
+    flex-wrap: wrap;
+    p,
+    .toAltWindow {
+      font-size: 1.3rem !important;
+    }
+
+    justify-content: space-between;
+  }
+}

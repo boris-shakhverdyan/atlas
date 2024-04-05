@@ -1,0 +1,392 @@
+.excursionCardMobile {
+  border-radius: 1rem;
+  height: 19rem;
+  width: 48rem;
+  background: white;
+  overflow: hidden;
+
+  .image {
+    background-position: center;
+    min-width: 18rem;
+  }
+
+  .mobileExcursionInfo {
+    h3 {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      line-height: 1.1;
+      color: #959294;
+    }
+    .rating {
+      p {
+        font-size: 1.5rem !important;
+        font-weight: 500;
+        color: #1e1e1e;
+      }
+    }
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #d900b6;
+    }
+    .type {
+      font-size: 1.2rem;
+      font-weight: 500;
+
+      text-transform: uppercase;
+      color: #d900b6;
+    }
+    .title {
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+    p {
+      font-size: 1.3rem !important;
+      color: #959294;
+      text-align: left;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-height: 4.8rem;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .excursionCardMobile {
+    height: 16rem;
+    width: 36rem;
+
+    .image {
+      min-width: 14rem;
+    }
+
+    .mobileExcursionInfo {
+      h3 {
+        font-size: 1.2rem;
+      }
+      .rating {
+        p {
+          font-size: 1.5rem !important;
+          font-weight: 500;
+          color: #1e1e1e;
+        }
+      }
+      .price {
+        font-size: 1.6rem;
+      }
+      .type {
+        font-size: 1.1rem;
+      }
+      .title {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 1.2rem !important;
+        -webkit-line-clamp: 2;
+        max-height: 4.8rem;
+      }
+    }
+  }
+}
+@media (max-width: 450px) {
+  .excursionCardMobile {
+    height: 12rem;
+    width: 28rem;
+
+    .image {
+      min-width: 10rem;
+    }
+
+    .mobileExcursionInfo {
+      h3 {
+        font-size: 1rem;
+      }
+      .rating {
+        p {
+          font-size: 1.3rem !important;
+          font-weight: 500;
+          color: #1e1e1e;
+          display: block;
+        }
+      }
+      .price {
+        font-size: 1.3rem;
+      }
+      .type {
+        font-size: 1.1rem;
+      }
+      .title {
+        font-size: 1.3rem;
+      }
+      p {
+        display: none;
+        font-size: 1.2rem !important;
+        -webkit-line-clamp: 2;
+        max-height: 4.8rem;
+      }
+    }
+  }
+}
+.status {
+  width: fit-content;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: white;
+  right: 15%;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.statusPaid {
+  background: #67c15e;
+}
+
+.controls {
+  right: 3rem;
+  top: 3rem;
+  .block {
+    min-height: 3.6rem;
+    transition: 0.3s background;
+    border-radius: 4px;
+    min-width: 3.6rem;
+    background: white;
+    &:hover {
+      background: rgb(235, 235, 235);
+    }
+    .panel {
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.047);
+      border-radius: 4px;
+      top: calc(100% + 0.4rem);
+      background: white;
+      padding: 0.4rem;
+      width: 100%;
+      .item {
+        padding: 0.3rem;
+        border-radius: 4px;
+        transition: 0.3s background;
+        &:hover {
+          background: rgb(235, 235, 235);
+        }
+      }
+    }
+  }
+}
+.excursionCard {
+  font-size: 10px;
+  background: white;
+  padding: 2rem;
+  min-height: 60rem;
+  position: relative;
+  border: 1px solid rgba(217, 0, 182, 0.1);
+  width: 42rem;
+  border-radius: 2rem;
+
+  .excursionContent {
+    flex: 1;
+  }
+  .excursionTextContent {
+    flex: 1;
+  }
+  .excursionImage {
+    border-radius: inherit;
+    height: 23rem;
+    width: 100%;
+  }
+  .excursionTitle {
+    font-size: 2rem;
+    color: #1e1e1e;
+    font-weight: 600;
+  }
+  .excursionType {
+    font-size: 1.4rem;
+    color: #d900b6;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .excursionDescription {
+    font-size: 1.6rem;
+    color: #414141;
+  }
+  .excursionDetailItem {
+    display: flex;
+    align-items: center;
+    min-width: unset;
+    gap: 1rem;
+    p {
+      font-size: 1.4rem;
+      color: #414141;
+    }
+  }
+  .excursionFavoriteButton {
+    font-size: 1.4rem;
+    transition: 0.3s;
+    padding: 0.8rem 1.4rem;
+    border-radius: 30px;
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+    cursor: pointer;
+    gap: 1rem;
+    &:hover {
+      background: #d900b50f;
+    }
+  }
+  .excursionInFavorites {
+    background: #d900b50f;
+  }
+
+  .excursionRating {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #414141;
+  }
+  .excursionPrice {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #d900b6;
+  }
+}
+.excursionCardLittle {
+  min-height: unset !important;
+  .excursionContent {
+    flex: unset !important;
+    gap: 2.5rem;
+  }
+  .excursionTextContent {
+    flex: unset !important;
+  }
+  .buttons {
+    .writeGuide {
+      border-radius: 3rem;
+    }
+  }
+}
+@media (max-width: 1400px) {
+  .excursionCard {
+    font-size: 10px;
+    background: white;
+    padding: 1.3rem;
+    min-height: 50rem;
+    position: relative;
+    border: 1px solid rgba(217, 0, 182, 0.1);
+    width: 32rem;
+    border-radius: 2rem;
+    .status {
+      width: 12rem;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.4rem;
+      color: white;
+      right: 15%;
+      border-bottom-right-radius: 1.5rem;
+      border-bottom-left-radius: 1.5rem;
+    }
+    .statusPaid {
+      background: #67c15e;
+    }
+
+    .excursionContent {
+      flex: 1;
+    }
+    .excursionTextContent {
+      flex: 1;
+    }
+    .excursionImage {
+      border-radius: inherit;
+      height: 18rem;
+      width: 100%;
+    }
+    .excursionTitle {
+      font-size: 2rem;
+      color: #1e1e1e;
+      font-weight: 600;
+    }
+    .excursionType {
+      font-size: 1.2rem;
+      color: #d900b6;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .excursionDescription {
+      font-size: 1.4rem;
+      color: #414141;
+    }
+    .excursionDetailItem {
+      display: flex;
+      align-items: center;
+      min-width: unset;
+      gap: 1rem;
+      p {
+        font-size: 1.2rem;
+        color: #414141;
+      }
+    }
+    .excursionFavoriteButton {
+      font-size: 1.2rem;
+      display: flex;
+      font-weight: 500;
+      align-items: center;
+      cursor: pointer;
+      gap: 1rem;
+    }
+    .excursionRating {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #414141;
+    }
+    .excursionPrice {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #d900b6;
+    }
+  }
+  .excursionCardLittle {
+    min-height: unset !important;
+    .excursionContent {
+      flex: unset !important;
+      gap: 2rem;
+    }
+    .excursionTextContent {
+      flex: unset !important;
+    }
+    .buttons {
+      .writeGuide {
+        font-size: 1.2rem;
+        border-radius: 3rem;
+      }
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .status {
+    width: fit-content;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    right: 3rem;
+    border-bottom-right-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .status {
+    width: fit-content;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    right: unset;
+    left: 1.4rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+}

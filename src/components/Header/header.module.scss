@@ -1,0 +1,175 @@
+.header {
+  background: linear-gradient(180deg, #ba009b 0%, rgb(123, 0, 164) 90.94%);
+  padding: .6rem 0;
+  z-index: 8;
+  .headerSearchBlock {
+    padding: 1.5rem 2rem;
+    background: white;
+    font-size: 1.6rem;
+    border-radius: 6px;
+    max-width: 33.5rem;
+    width: 33.5rem;
+  }
+  .headerLogo {
+    p {
+      font-size: 1.6rem;
+      font-weight: 600;
+      background: linear-gradient(180deg, #FFF 28.13%, #BDBDBD 60.46%, #FFF 93.75%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .headerCountMessenger {
+    top: calc(100% - 12px);
+    left: calc(100% - 15px);
+  }
+  .headerCountSeen {
+    top: -5px;
+    left: calc(100% - 12px);
+  }
+  .headerNavItem {
+    position: relative;
+
+  }
+  .headerPhone {
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 1.2rem 2rem;
+    color: black;
+    border-radius: 4rem;
+    background: white;
+  }
+  .headerSocialItem {
+    border-radius: 50%;
+    padding: .8rem;
+    background: white;
+  }
+  .headerBurger {
+    display: none;
+  }
+}
+.suggestions {
+  top: calc(100% + .4rem);
+  max-height: 21.6rem;
+  overflow-y: auto;
+  border-radius: .6rem;
+  .suggestion {
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding: 1.8rem;
+    transition: .3s background;
+    &:hover {
+      background: rgb(247, 247, 247);
+    }
+  }
+}
+.suggestions::-webkit-scrollbar {
+  width: 4px;
+}
+.suggestions::-webkit-scrollbar-thumb {
+  background: #BDBDBD;
+}
+@media (max-width: 1400px) {
+  .header{
+    .headerLogo {
+      svg {
+        width: 14rem;
+      }
+    }
+    .headerSearchBlock {
+      input {
+        font-size: 1.3rem;
+      }
+      padding: 1rem 1.5rem;
+      background: white;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      max-width: 27.5rem;
+      width: 27.5rem;
+    }
+    .headerNavItem {
+      position: relative;
+      svg {
+        height: 2.6rem;
+      }
+
+    }
+    .headerNav {
+      gap: 1.5rem;
+    }
+    .headerPhone {
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding: 1rem;
+      color: black;
+      border-radius: 4rem;
+      gap: .5rem;
+      background: white;
+      svg {
+        height: 2rem;
+      }
+    }
+    .headerSocial {
+      gap: 1rem;
+    }
+    .headerSocialItem {
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      padding: .4rem;
+      background: white;
+      svg {
+        height: 2rem;
+      }
+    }
+  }
+
+
+}
+
+@media (max-width: 1050px) {
+  .headerNav {
+    display: none;
+  }
+  .headerPhone {
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+    svg {
+      width: 3rem !important;
+      height: 3rem !important;
+    }
+    p {
+      display: none;
+    }
+  }
+  .logoLink {
+    order: -1;
+  }
+  .headerSocialItem {
+    height: 4rem !important;
+    width: 4rem !important;
+  }
+  .headerContacts {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .headerRight {
+    display: none;
+  }
+  .headerLogo {
+    svg {
+      height: 6rem;
+    }
+  }
+  .headerBurger {
+    display: block !important;
+  }
+  .headerSearchBlock {
+    display: none;
+  }
+}

@@ -1,0 +1,107 @@
+.searchSection {
+  .filter {
+    font-size: 1.6rem;
+    color: #d900b6;
+  }
+
+  .finded {
+    font-size: 1.6rem;
+  }
+}
+.excursionsLayoutList {
+  gap: 4.5rem;
+}
+
+@media (max-width: 1400px) {
+  .excursionsLayoutList {
+    gap: 5.5rem;
+  }
+  .searchPageTop {
+    align-items: flex-start;
+  }
+}
+@media (max-width: 1100px) {
+  .excursionsLayoutList {
+    gap: 3rem;
+  }
+}
+.searchMobileCard {
+  width: 100%;
+}
+.searchWrapper {
+  background: white;
+  border-radius: 6px;
+  padding: 1.2rem 2rem;
+  width: 46rem;
+  box-shadow: 0px 1px 8px 0px rgba(19, 101, 101, 0.1);
+  input {
+    font-size: 1.4rem;
+  }
+}
+.searchCategoryInput {
+  padding: 1.2rem 2rem;
+  height: 5.2rem !important;
+  width: 30rem;
+  gap: 1rem;
+}
+.searchCityInput {
+  padding: 1.2rem 2rem;
+  height: 5.2rem !important;
+  width: 24rem;
+  gap: 1rem;
+}
+.searchFilterIdle {
+  visibility: hidden;
+  opacity: 0;
+}
+.searchFilterOpened {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1050px) {
+  .searchLeft {
+    gap: 2rem;
+  }
+  .searchPageTop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .searchWrapper {
+    width: 100%;
+  }
+  .cardExcursion {
+    width: 100% !important;
+  }
+  .searchWrapper {
+    width: 30rem;
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+    input {
+      font-size: 1.4rem;
+    }
+  }
+  .searchCategoryInput {
+    height: 4.4rem !important;
+    width: 26rem;
+  }
+}
+@media (max-width: 421px) {
+  .searchInputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .searchCategoryWrapper {
+    width: 100%;
+  }
+  .searchCategoryInput,
+  .searchCityInput {
+    width: 100% !important;
+    flex: 1;
+  }
+  .searchWrapper {
+    width: 100%;
+  }
+}

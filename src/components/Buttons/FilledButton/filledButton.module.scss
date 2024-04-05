@@ -1,0 +1,25 @@
+
+
+.filledButton {
+  border-radius: 6px;
+  background: #D900B6;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  justify-content: center;
+  max-height: 4rem;
+  color: white;
+  padding: 2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: .3s background;
+  &:hover {
+
+    color: white;
+    background: rgba(217, 0, 182, 0.6);
+  }
+  &:disabled {
+    background: rgba(217, 0, 182, 0.15);
+  }
+}

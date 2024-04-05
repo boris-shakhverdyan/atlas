@@ -1,0 +1,15 @@
+.historyLoader {
+
+}
+
+@media (max-width: 1050px) {
+  .mobileCard {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .historyLoader {
+    justify-content: center;
+  }
+  
+}

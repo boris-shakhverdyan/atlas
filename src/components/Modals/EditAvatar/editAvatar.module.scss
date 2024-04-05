@@ -1,0 +1,47 @@
+.editAvatarWindow {
+  justify-content: unset;
+  max-height: 90vh;
+  .uploadStepBtn {
+    max-width: fit-content;
+  }
+  .imageArea {
+    background: #414141;
+  }
+  .description {
+    font-size: 1.4rem;
+    color: #959294;
+  }
+  .backbtn {
+    color: #959294;
+    border: 2px solid #959294;
+    background: transparent;
+  }
+  .btn {
+    max-height: 4rem;
+    padding: 2.5rem;
+  }
+  .yourAvatarText {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .form {
+    flex-direction: column;
+    justify-content: unset;
+  }
+  .errUpload {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 620px) {
+  .editAvatarWindow {
+    max-height: unset;  
+  }
+  
+}
+@media (max-width: 430px) {
+  .editAvatarWindow {
+    .avatarArea {
+      flex-direction: column;
+    }
+  }
+}

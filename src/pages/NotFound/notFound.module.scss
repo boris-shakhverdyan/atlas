@@ -1,0 +1,12 @@
+.notFoundSection {
+    min-height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+@media (max-width: 837px) {
+    .notFoundSection {
+        background-size: contain;
+    }
+    
+}

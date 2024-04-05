@@ -1,0 +1,64 @@
+.field {
+  textarea {
+    resize: none;
+  }
+  .incorrectBlock {
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(49%);
+    border-radius: 10px;
+    background: white;
+    border: 1px solid #ff6c6c;
+    padding: 3px .8rem;
+    
+  }
+  .incorrect {
+    font-size: 1rem;
+    color: #ff6c6c;
+    font-weight: 500;
+    text-align: right;
+  }
+  input {
+    font-size: 1.4rem;
+  }
+  label {
+    color: #4d4d4d;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  .isIncorrect {
+    border: 2px solid #ff6c6c !important;
+  }
+
+  .wrapper {
+    height: fit-content;
+    border: 2px solid transparent;
+
+    border-radius: 6px;
+    .input {
+      font-size: 1.4rem;
+    }
+    .right {
+      font-size: 1.3rem;
+      color: #D900B6;
+    }
+
+  }
+
+}
+@media (max-width: 640px) {
+  .field {
+    .wrapper {
+      padding: 1.5rem;
+    }
+  }
+
+}
+@media (max-width: 560px) {
+  .field {
+    .wrapper {
+      padding: 1.2rem;
+    }
+  }
+
+}

@@ -1,0 +1,69 @@
+.orderCard {
+    max-width: 46rem;
+    border-radius: 1rem;
+    transition: .3s background;
+    &:hover {
+        background: #f6f6f6;
+    }
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .status {
+        padding: 0.6rem 1.2rem;
+        font-size: 1.4rem;
+        border-radius: 6px;
+    }
+    .label {
+        font-size: 1.4rem;
+    }
+    .labelTitle {
+        font-size: 1.4rem;
+        color: #414141;
+        font-weight: 600;
+    }
+    .statusMobile {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 488px) {
+    .statusDesktop {
+        display: none;
+    }
+    .statusMobile {
+        display: flex !important;
+    }
+    .orderCard {
+        width: 100%;
+        gap: 1rem;
+        
+        max-width: 100%;
+        border-radius: 1rem;
+        .blockToModal {
+            width: 100%;
+        }
+        .bottom {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            .dates {
+                gap: 1rem;
+                justify-content: space-between;
+            }
+        }
+        h3 {
+            font-size: 1.6rem;
+        }
+        .status {
+            font-size: 1.2rem;
+        }
+        .label {
+            font-size: 1.2rem;
+        }
+        .labelTitle {
+            font-size: 1.2rem;
+        }
+    }
+}

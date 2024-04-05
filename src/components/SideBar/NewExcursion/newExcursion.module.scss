@@ -1,0 +1,17 @@
+.createBtn {
+  max-height: 5rem;
+  max-width: 16rem;
+}
+.sidebar {
+  width: 100%;
+  flex: 1;
+  .item {
+    width: fit-content;
+  }
+}
+@media (max-width: 1050px) {
+  .sidebar {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}

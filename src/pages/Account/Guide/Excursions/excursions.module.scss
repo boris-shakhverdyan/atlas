@@ -1,0 +1,15 @@
+.guideExcursions {
+
+}
+@media (max-width: 1050px) {
+    .guideExcursionItem {
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    .guideExcursions {
+        .guideExcursionsCreate {
+            width: 100%;
+        }
+    }
+}

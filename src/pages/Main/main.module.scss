@@ -1,0 +1,100 @@
+
+.WelcomeBlock {
+  h1 {
+    max-width: 112.5rem;
+    font-size: 5.8rem;
+  }
+
+  p {
+    font-size: 2.1rem;
+  }
+
+  .WelcomeSearch {
+    max-width: 42.6rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    backdrop-filter: blur(7.5px);
+
+    input {
+      background: transparent;
+      flex: 1;
+      color: white;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.popularExcursionChoose {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+@media (max-width: 1050px) {
+  .WelcomeBlock {
+    h1 {
+      max-width: 112.5rem;
+      font-size: 4.4rem !important;
+    }
+    p {
+      font-size: 1.8rem !important;
+      text-align: center;
+    }
+  }
+
+}
+@media (max-width: 520px) {
+  .WelcomeBlock {
+    align-items: flex-start;
+    h1 {
+      text-align: left !important;
+      font-size: 3.5rem !important;
+    }
+    p {
+      font-size: 2.1rem;
+      text-align: left !important;
+    }
+  }
+
+
+  .WelcomeSearch {
+    max-width: 42.6rem;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.10);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1.5rem;
+    backdrop-filter: blur(7.5px);
+
+    input {
+      background: transparent;
+      flex: 1;
+      color: white;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .popularExcursionChoose {
+    .excursionChooseBtn {
+      max-width: unset !important;
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.profileArea {
+
+}
+.areaContent {
+  flex: 0.9;
+}
+@media (max-width: 1400px) {
+  .areaContent {
+    flex: 0.96;
+  }
+}
+@media (max-width: 1050px) {
+  .profileArea {
+    flex-direction: column;
+  }
+}

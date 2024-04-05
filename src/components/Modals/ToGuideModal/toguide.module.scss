@@ -1,0 +1,19 @@
+.toGuideWindow {
+  max-width: 50rem;
+  .btn {
+    max-height: 4rem;
+    padding: 2.5rem;
+  }
+  .aboutGuide {
+    height: 16rem;
+  }
+  .form {
+    flex-direction: column;
+    justify-content: unset;
+  }
+}
+@media (max-width: 560px) {
+  .toGuideWindow {
+    max-width: unset;
+  }
+}

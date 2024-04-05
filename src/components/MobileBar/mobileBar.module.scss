@@ -1,0 +1,28 @@
+.mobileBar {
+  background: rgba(175, 0, 148, 0.9);
+  z-index: 9;
+  padding: 2rem;
+  .messengerCount {
+    right: -8px;
+    top: -4px;
+  }
+  .seenCount {
+    right: -8px;
+    top: -4px;
+  }
+
+}
+.navItem {
+
+}
+@media (max-width: 476px) {
+  .mobileBar {
+    padding: 1.5rem;
+  }
+  .navItem {
+    svg {
+      max-height: 29px;
+      max-width: 27px;
+    }
+  }
+}

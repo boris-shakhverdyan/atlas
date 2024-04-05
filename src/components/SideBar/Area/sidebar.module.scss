@@ -1,0 +1,28 @@
+.sidebar{
+  background: white;
+  width: 22rem;
+  min-width: 22rem;
+  min-height: 45rem;
+  border-radius: 1.5rem;
+  z-index: 6;
+  max-height: 45rem;
+  position: sticky;
+  top: 10rem;
+}
+@media (max-width: 1050px) {
+  .sidebar {
+    width: 100%;
+    height: fit-content;
+    min-width: unset;
+    min-height: unset;
+    max-height: unset;
+    flex-direction: row;
+    padding: 1.6rem;
+    gap: 2rem;
+  }
+}
+@media (max-width: 670px) {
+  .sidebar {
+      display: none;
+  }
+}

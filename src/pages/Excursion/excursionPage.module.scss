@@ -1,0 +1,873 @@
+.similarItem {
+  width: 100% !important;
+}
+.slideDescription {
+  font-size: 2.6rem;
+  color: white;
+  margin-top: 20rem;
+}
+.slideBtn {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  background: white;
+  transition: 0.3s transform;
+}
+.slideBtn:hover {
+  transform: scale(1.1);
+}
+.WelcomeBlock {
+  min-height: 40rem;
+  .welcomeExcursionTitle {
+    font-size: 3.2rem;
+    display: none;
+  }
+  .excursionBottom {
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  .excursionInfo {
+    .rating {
+      p {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #db00ff;
+        text-shadow:
+          -1px -1px 0 #fff,
+          /* Тень сверху слева */ 1px -1px 0 #fff,
+          /* Тень сверху справа */ -1px 1px 0 #fff,
+          /* Тень снизу слева */ 1px 1px 0 #fff; /* Тень снизу справа */
+      }
+    }
+    .favoriteWrapper {
+      cursor: pointer;
+      width: fit-content;
+      border-radius: 3rem;
+      .favoriteBtn {
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        height: 3.6rem;
+        padding-top: 2px;
+        min-width: 3.6rem;
+      }
+      p {
+        font-size: 1.8rem;
+      }
+    }
+    .inFavoriteWrapper {
+      background: #e7c3e1;
+      color: #d900b6;
+    }
+  }
+  .breadCrumbs {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .description {
+    flex: 0.75;
+    display: flex;
+    align-items: flex-end;
+    p {
+      font-size: 2.4rem;
+    }
+  }
+  h1 {
+    max-width: 112.5rem;
+    font-size: 5.8rem;
+  }
+  p {
+    font-size: 2.1rem;
+  }
+}
+.sliderArrowsMobile {
+  display: none;
+  .slideBtn {
+    opacity: 0.5;
+  }
+}
+.excursionNavigation {
+  p {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #d900b6;
+  }
+}
+.orderBtn {
+  border-radius: 5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.price {
+  h3 {
+    font-size: 3.2rem;
+    text-wrap: nowrap;
+    color: #d900b6;
+  }
+  p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #959294;
+  }
+}
+.slider {
+  height: 82vh;
+  min-height: 56rem;
+  z-index: 1;
+  width: 100vw;
+  background: #414141;
+}
+.emptySection {
+  padding: 5rem 0;
+}
+.excursionWelcome {
+  position: relative;
+  padding: 5rem 0;
+  min-height: 56rem;
+  height: 82vh;
+  z-index: 3;
+}
+.similarSlider {
+  width: 100%;
+  margin: 0;
+}
+.excursionSection {
+  .block {
+    background: white;
+    width: 100%;
+    border-radius: 5rem;
+    padding: 5rem 3rem;
+    .top {
+      .titleBlock {
+        h2 {
+          font-size: 3rem;
+          font-weight: 600;
+        }
+        p {
+          color: #414141;
+          font-size: 1.8rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .age {
+    h2 {
+      font-weight: 500;
+    }
+    font-size: 3rem;
+    font-weight: 500;
+    color: #d900b6;
+  }
+  .excursionFeature {
+    color: #d900b6;
+    font-size: 2.4rem;
+  }
+  .infoBlock {
+    .pointsBlock {
+      h2 {
+        font-size: 3rem;
+        color: #d900b6;
+        font-weight: 600;
+      }
+      .points {
+        .paragraphBlock {
+          h3 {
+            font-size: 2.1rem;
+            color: #959294;
+            text-transform: uppercase;
+            font-weight: 500;
+          }
+          p {
+            font-size: 1.8rem;
+          }
+          .listBlock {
+            .listItem {
+              font-size: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+    .guideCard {
+      max-width: 51rem;
+      .avatar {
+        border-radius: 50%;
+        min-height: 8rem;
+        border: 1px solid rgb(234, 234, 234);
+        min-width: 8rem;
+        background-position: center;
+      }
+      .name {
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+      .rating {
+        p {
+          color: #d900b6;
+          font-size: 1.8rem;
+          font-weight: 500;
+        }
+      }
+      .description {
+        font-size: 1.4rem;
+        display: none;
+        
+      }
+    }
+    .locations {
+      .item {
+        border-radius: 3rem;
+        background: #fff;
+        box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 600;
+          padding: 2rem 4rem;
+        }
+      }
+    }
+    .reviews {
+      .item {
+        padding: 3rem;
+        box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+        border-radius: 2rem;
+        p {
+          font-size: 1.6rem;
+        }
+      }
+      .profile {
+        .avatar {
+          background-position: center;
+          min-height: 5rem;
+          border-radius: 50%;
+          min-width: 5rem;
+        }
+        h3 {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+      }
+    }
+    .reviewForm {
+      textarea {
+        resize: none;
+        padding: 1.5rem;
+        font-size: 1.6rem;
+        height: 16rem;
+        box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+        width: 100%;
+      }
+      .button {
+        cursor: pointer;
+        border-radius: 6px;
+        padding: 1rem 3rem;
+        text-align: center;
+        font-size: 1.4rem;
+        width: 25rem;
+      }
+      
+    }
+    .button {
+      max-width: 30rem;
+    }
+    .share {
+      p {
+        font-size: 1.4rem;
+        font-weight: 500;
+      }
+    }
+    .similar {
+    }
+  }
+}
+@media (max-width: 1050px) {
+  .age {
+    h2 {
+      font-size: 3.2rem;
+    }
+  }
+  .excursionFeature {
+    font-size: 1.8rem !important;
+    svg {
+      max-height: 3rem;
+    }
+  }
+  .orderBtn {
+    font-size: 1.6em;
+  }
+  .price {
+    h3 {
+      font-size: 2.8rem;
+      text-wrap: nowrap;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .excursionNavigation {
+    .pageLink {
+      p {
+        font-size: 1.6rem;
+        width: fit-content;
+      }
+    }
+  }
+  .WelcomeBlock {
+    .excursionBottom {
+      flex-direction: column-reverse;
+      align-items: unset;
+    }
+  }
+  .excursionSection {
+    .infoBlock {
+      .pointsBlock {
+        h2 {
+          font-size: 2.4rem !important;
+        }
+        .points {
+          .paragraphBlock {
+            h3 {
+              font-size: 1.8rem !important;
+            }
+            p {
+              font-size: 1.8rem;
+            }
+            .listBlock {
+              .listItem {
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+      }
+      .guideCard {
+        max-width: 51rem;
+        .avatar {
+          border-radius: 50%;
+          min-height: 8rem;
+          min-width: 8rem;
+        }
+        .name {
+          font-size: 2.2rem;
+          font-weight: 600;
+        }
+        .rating {
+          p {
+            color: #d900b6;
+            font-size: 1.8rem;
+            font-weight: 500;
+          }
+        }
+        .description {
+          font-size: 1.4rem;
+        }
+      }
+      .locations {
+        .item {
+          border-radius: 3rem;
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding: 2rem 4rem;
+          }
+        }
+      }
+      .reviews {
+        .item {
+          padding: 3rem;
+          box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+          border-radius: 2rem;
+          p {
+            font-size: 1.6rem;
+          }
+        }
+        .profile {
+          .avatar {
+            background-position: center;
+            min-height: 5rem;
+            border-radius: 50%;
+            min-width: 5rem;
+          }
+          h3 {
+            font-size: 2rem;
+            font-weight: 600;
+          }
+        }
+      }
+      .reviewForm {
+        textarea {
+          resize: none;
+          padding: 1.5rem;
+          font-size: 1.6rem;
+          height: 16rem;
+          box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+          width: 100%;
+        }
+        .button {
+          cursor: pointer;
+          border-radius: 6px;
+          padding: 1rem 3rem;
+          background: white;
+          text-align: center;
+          color: #d900b6;
+          border: 1px #d900b6 solid;
+          font-size: 1.4rem;
+          width: 25rem;
+        }
+      }
+      .button {
+        max-width: 30rem;
+      }
+      .share {
+        p {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+      .similar {
+      }
+    }
+    .block {
+      .excursionInfo {
+        .infoBlock {
+          .pointsBlock {
+            h2 {
+              font-size: 1.8rem;
+              color: #d900b6;
+              font-weight: 600;
+            }
+            .points {
+              .paragraphBlock {
+                h3 {
+                  font-size: 2.4rem;
+                  color: #959294;
+                  font-weight: 500;
+                }
+                p {
+                  font-size: 1.8rem;
+                }
+                .listBlock {
+                  .listItem {
+                    font-size: 1.8rem;
+                  }
+                }
+              }
+            }
+          }
+          .guideCard {
+            max-width: 51rem;
+            .avatar {
+              border-radius: 50%;
+              min-height: 8rem;
+              min-width: 8rem;
+              background-position: center;
+            }
+            .name {
+              font-size: 2.2rem;
+              font-weight: 600;
+            }
+            .rating {
+              p {
+                color: #d900b6;
+                font-size: 1.8rem;
+                font-weight: 500;
+              }
+            }
+            .description {
+              font-size: 1.4rem;
+            }
+          }
+          .locations {
+            .item {
+              border-radius: 3rem;
+              background: #fff;
+              box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+              h3 {
+                font-size: 1.8rem;
+                font-weight: 600;
+                padding: 2rem 4rem;
+              }
+            }
+          }
+          .reviews {
+            .item {
+              padding: 3rem;
+              box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+              border-radius: 2rem;
+              p {
+                font-size: 1.6rem;
+              }
+            }
+            .profile {
+              .avatar {
+                background-position: center;
+                min-height: 5rem;
+                border-radius: 50%;
+                min-width: 5rem;
+              }
+              h3 {
+                font-size: 2rem;
+                font-weight: 600;
+              }
+            }
+          }
+          .reviewForm {
+            textarea {
+              resize: none;
+              padding: 1.5rem;
+              font-size: 1.6rem;
+              height: 16rem;
+              box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+              width: 100%;
+            }
+            .button {
+              cursor: pointer;
+              border-radius: 6px;
+              padding: 1rem 3rem;
+              background: white;
+              text-align: center;
+              color: #d900b6;
+              border: 1px #d900b6 solid;
+              font-size: 1.4rem;
+              width: 25rem;
+            }
+          }
+          .button {
+            max-width: 30rem;
+          }
+          .share {
+            p {
+              font-size: 1.4rem;
+              font-weight: 500;
+            }
+          }
+          .similar {
+          }
+        }
+      }
+      .top {
+        .titleBlock {
+          h2 {
+            font-size: 2.4rem;
+          }
+          p {
+            color: #414141;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    .age {
+      h2 {
+        font-weight: 500;
+      }
+      font-size: 3rem;
+      font-weight: 500;
+      color: #d900b6;
+    }
+    .excursionFeature {
+      color: #d900b6;
+      font-size: 2.4rem;
+    }
+    .infoBlock {
+      .pointsBlock {
+        h2 {
+          font-size: 3rem;
+          color: #d900b6;
+          font-weight: 600;
+        }
+        .points {
+          .paragraphBlock {
+            h3 {
+              font-size: 2.4rem;
+              color: #959294;
+              font-weight: 500;
+            }
+            p {
+              font-size: 1.8rem;
+            }
+            .listBlock {
+              .listItem {
+                font-size: 1.8rem;
+              }
+            }
+          }
+        }
+      }
+      .guideCard {
+        max-width: 51rem;
+        .avatar {
+          border-radius: 50%;
+          min-height: 8rem;
+          min-width: 8rem;
+          background-position: center;
+        }
+        .name {
+          font-size: 2.2rem;
+          font-weight: 600;
+        }
+        .rating {
+          p {
+            color: #d900b6;
+            font-size: 1.8rem;
+            font-weight: 500;
+          }
+        }
+        .description {
+          font-size: 1.4rem;
+        }
+      }
+      .locations {
+        .item {
+          border-radius: 3rem;
+          background: #fff;
+          box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            padding: 2rem 4rem;
+          }
+        }
+      }
+      .reviews {
+        .item {
+          padding: 3rem;
+          box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+          border-radius: 2rem;
+          p {
+            font-size: 1.6rem;
+          }
+        }
+        .profile {
+          .avatar {
+            background-position: center;
+            min-height: 5rem;
+            border-radius: 50%;
+            min-width: 5rem;
+          }
+          h3 {
+            font-size: 2rem;
+            font-weight: 600;
+          }
+        }
+      }
+      .reviewForm {
+        textarea {
+          resize: none;
+          padding: 1.5rem;
+          font-size: 1.6rem;
+          height: 16rem;
+          box-shadow: 0px 0px 2rem 0px rgba(0, 0, 0, 0.1);
+          width: 100%;
+        }
+        .button {
+          cursor: pointer;
+          border-radius: 6px;
+          padding: 1rem 3rem;
+          background: white;
+          text-align: center;
+          color: #d900b6;
+          border: 1px #d900b6 solid;
+          font-size: 1.4rem;
+          width: 25rem;
+        }
+      }
+      .button {
+        max-width: 30rem;
+      }
+      .share {
+        p {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+      }
+      .similar {
+      }
+    }
+  }
+}
+@media (max-width: 740px) {
+  .sliderArrowsMobile {
+    display: flex;
+  }
+  .slider {
+    max-height: 60rem;
+    min-height: 50rem;
+  }
+  .excursionWelcome {
+    position: relative;
+    padding: 5rem 0;
+    min-height: 50rem;
+    max-height: 60rem;
+    z-index: 3;
+  }
+  .priceBottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+  .orderBtn {
+    flex: 1;
+    min-width: 28.4rem;
+  }
+  .sliderExcursion {
+    display: none;
+  }
+  .slideDescription {
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 0;
+  }
+  .WelcomeBlock {
+    .welcomeExcursionTitle {
+      font-size: 3.2rem;
+      font-weight: 600;
+      display: block;
+    }
+    .breadCrumbs {
+      display: none;
+    }
+    .excursionInfo {
+      flex-direction: column-reverse;
+      align-items: unset;
+      gap: 20px;
+    }
+  }
+  .excursionSection {
+    .age {
+      h2 {
+        font-weight: 500;
+      }
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: #d900b6;
+    }
+    .block {
+      .top {
+        flex-direction: column;
+        align-items: unset;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .priceBottom {
+    .price {
+      width: 100%;
+    }
+  }
+  .shareBtn {
+    width: 100%;
+    max-width: unset;
+  }
+  .messageGuide {
+    width: 100%;
+    max-width: unset;
+    text-align: center;
+  }
+  .excursionSection {
+    .wrapperExcursions {
+      padding: unset;
+    }
+    .block {
+      border-radius: 3rem;
+      padding: 2.4rem;
+      .infoBlock {
+        .pointsBlock {
+          h2 {
+            font-size: 2.1rem !important;
+            color: #d900b6;
+            font-weight: 600;
+          }
+          .points {
+            .paragraphBlock {
+              p {
+                font-size: 1.6rem;
+              }
+              .listBlock {
+                .listItem {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+          }
+        }
+        .guideCard {
+          max-width: 100%;
+          flex-direction: column;
+          align-items: flex-start;
+          .person .avatar {
+            min-height: 6rem;
+            min-width: 6rem;
+          }
+          .name {
+            font-size: 2rem;
+            font-weight: 600;
+          }
+          .rating {
+            p {
+              color: #d900b6;
+              font-size: 1.8rem;
+              font-weight: 500;
+            }
+          }
+          .description {
+            font-size: 1.4rem;
+          }
+        }
+        .locations {
+          .item {
+            border-radius: 1rem;
+            h3 {
+              font-size: 1.6rem;
+            }
+          }
+          svg {
+            max-width: 1.5rem;
+            max-height: 3rem;
+          }
+        }
+        .reviewForm {
+          .button {
+            width: 100%;
+            max-width: unset;
+          }
+        }
+      }
+    }
+  }
+  .excursionFeature {
+    color: #d900b6;
+    font-size: 1.6rem !important;
+    svg {
+      max-height: 2.3rem;
+      max-width: 2.3rem;
+    }
+  }
+  .price {
+    flex-direction: column;
+    .orderBtn {
+      width: 100%;
+      min-width: unset;
+    }
+    .priceInfo {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+  }
+  .WelcomeBlock {
+    .welcomeExcursionTitle {
+      font-size: 2.4rem;
+      font-weight: 600;
+      display: block;
+    }
+  }
+}

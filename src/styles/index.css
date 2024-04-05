@@ -1,0 +1,205 @@
+@import "tikstyles.css";
+
+html {
+
+    font-size: 10px;
+
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #FBDFFF;
+
+}
+body::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+}
+.errColor {
+    color: #ff6c6c;
+    font-size: 1.2rem;
+}
+.hover-scale {
+    transition: .3s transform;
+    cursor: pointer;
+}
+.hover-scale:hover {
+    transform: scale(1.1);
+}
+.emptyText {
+    font-size: 2rem;
+}
+.App {
+    min-height: 100vh;
+}
+.AppContent {
+    padding-top: 9.2rem;
+    min-height: 76vh;
+}
+.bg-shadow {
+    background: rgba(0, 0, 0, 0.52);
+    top: 0;
+    left: 0;
+}
+
+.section-title, .section-subtitle {
+    font-weight: 600;
+}
+
+.section-title {
+    font-size: 4rem;
+}
+
+
+.section-subtitle {
+    font-size: 3.2rem;
+}
+.selected-underline::after {
+    height: 6px;
+    width: 100%;
+    content: "";
+    left: 0;
+    background: #D900b6;
+    position: absolute;
+    bottom: -1.5rem
+}
+.wrapper {
+    max-width: 138rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+.sectionBlock {
+    gap: 4rem;
+}
+
+@media (max-width: 1400px) {
+    .wrapper {
+        max-width: 110rem;
+    }
+}
+@media (max-width: 1100px) {
+    .wrapper {
+        max-width: 105rem;
+    }
+}
+@media (max-width: 1050px) {
+    .wrapper {
+        max-width: 80rem;
+    }
+}
+@media (max-width: 669px) {
+    .AppContent {
+        padding-top: 7.2rem;
+    }
+    .sectionBlock {
+        gap: 2rem;
+    }
+
+}
+@media (max-width: 640px) {
+    .section-subtitle {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 3rem;
+    }
+}
+.blured-entrance {
+    animation: blured-entrance-anim .35s ease-in;
+}
+
+.inputRight {
+    font-size: 1.2rem;
+    color: #D900b6;
+}
+
+.modalCloseBtn {
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.colorPurple {
+    color: #D900b6;
+}
+.status-green {
+    background: #67C15E;
+}
+.status-blue {
+    background: #3a68ff;
+}
+.bx-shadow {
+    box-shadow: 0px 1px 8px 0px rgba(19, 101, 101, 0.10);
+}
+.circle {
+    border-radius: 50%;
+}
+@keyframes blured-entrance-anim {
+    from {
+        transform: translateX(-10rem);
+        opacity: 0;
+        filter: blur(5px);
+    }
+    to {
+        transform: none;
+        opacity: 1;
+        filter: none;
+    }
+}
+.infiniteSpin {
+    max-height: fit-content;
+    max-width: fit-content;
+    animation: spin .5s linear infinite;
+}
+.slide-out-top {
+	-webkit-animation: slide-out-top 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: slide-out-top 0.3s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+.emptySection {
+    padding: 6.5rem 0;
+}
+.docText {
+    font-size: 1.8rem;
+}
+@-webkit-keyframes slide-out-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateY(-1000px);
+              transform: translateY(-1000px);
+      opacity: 0;
+    }
+  }
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,15 @@
+.messengerBlock {
+  height: 40rem;
+  width: 30rem;
+  background: whitesmoke;
+  border-radius: 2rem;
+  visibility: hidden;
+  z-index: 99999;
+  opacity: 0;
+  right: -2rem;
+  bottom: -1rem;
+}
+.messengerIsOpened {
+  visibility: visible;
+  opacity: 1;
+}

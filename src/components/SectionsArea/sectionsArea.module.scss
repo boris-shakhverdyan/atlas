@@ -1,0 +1,10 @@
+.SectionsArea {
+  gap: 10rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 670px) {
+  .SectionsArea {
+    gap: 5rem;
+  }
+}

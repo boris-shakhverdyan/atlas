@@ -1,0 +1,14 @@
+.popularCitiesItems {
+    column-gap: 7.5rem;
+    row-gap: 5rem;
+}
+@media (max-width: 1400px) {
+    .popularCitiesItems {
+        column-gap: 5.5rem;
+    }
+}
+@media (max-width: 1100px) {
+    .popularCitiesItems {
+        justify-content: space-between;
+    }
+}

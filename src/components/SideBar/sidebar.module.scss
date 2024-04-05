@@ -1,0 +1,29 @@
+.item {
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.itemActive {
+  color: #D900b6;
+}
+.tabs {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.logout {
+  font-size: 1.6rem;
+  width: fit-content;
+  color: #D90000;
+  cursor: pointer;
+}
+
+@media (max-width: 1050px) {
+  .item, .logout {
+    font-size: 1.4rem;
+    width: fit-content;
+  }
+  .tabs {
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+  }
+}

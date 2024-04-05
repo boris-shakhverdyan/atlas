@@ -1,0 +1,123 @@
+.saveBtn {
+  max-width: fit-content;
+  min-width: 40rem;
+  min-height: 5.5rem;
+}
+.content {
+  .avatar {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    background-color: white;
+    background-position: center;
+    .edit {
+      height: 2.6rem;
+      position: absolute;
+      cursor: pointer;
+      bottom: 0;
+      right: 1.5rem;
+      width: 2.6rem;
+      border-radius: 5px;
+      background: #FFF;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+    }
+
+  }
+  .stayGuideBtn {
+    height: 6.2rem;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    padding: 0;
+    justify-content: center;
+    border-radius: 6px;
+    text-align: center;
+  }
+  .aboutInput {
+    height: 20rem;
+  }
+  .input {
+    font-weight: bold;
+  }
+
+}
+@media (max-width: 1400px) {
+  .wrapperInput {
+    padding: 1.6rem;
+  }
+  .content {
+    .avatar {
+      min-height: 10rem;
+      min-width: 10rem;
+      max-width: 10rem;
+      max-height: 10rem;
+      border-radius: 50%;
+      background-color: white;
+      .edit {
+        height: 2.6rem;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        right: 0;
+      }
+
+    }
+    .stayGuideBtn {
+      height: 5.4rem;
+    }
+    .input {
+      max-width: 17rem;
+    }
+  }
+}
+@media (max-width: 820px) {
+  .content {
+    .avatar {
+      align-self: center;
+      min-height: 13rem;
+      min-width: 13rem;
+      max-width: 13rem;
+      max-height: 13rem;
+    }
+  }
+  .contentPersonal {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 670px) {
+  .aboutSelfWrapper {
+    width: 100%;
+  }
+  .content {
+    .inputsPart {
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+    }
+    .wrapperInput {
+      width: 100%;
+    }
+    .stayGuideBtn {
+      min-height: 5.4rem !important;
+      width: 20rem;
+      align-self: flex-start;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .saveBtn {
+    max-width: 100%;
+    min-width: unset;
+    font-size: 1.4rem;
+    min-height: 4.6rem;
+  }
+  .content {
+    .stayGuideBtn {
+      width: 100%;
+      min-height: 4.6rem !important;
+    }
+  }
+
+}

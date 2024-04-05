@@ -1,0 +1,26 @@
+.disabled {
+  
+}
+
+.tagBlock {
+  color: #D900B6;
+  border-radius: .6rem;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  font-size: 1.4rem;
+  border: 2px solid #D900B6;
+  transition: .3s background, .3s color;
+  &:hover {
+    color: white;
+    background: #D900B6;
+  }
+  &:disabled {
+    border: 2px solid gray;
+    color: gray;
+  }
+  &:disabled:hover {
+    background: transparent;
+  }
+}

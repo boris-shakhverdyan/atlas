@@ -1,0 +1,12 @@
+.pageLoader {
+    padding-top: 9.2rem;
+    background: white;
+    top: 0;
+    z-index: 6;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loaded { 
+    transform: translateY(-120vh);
+}

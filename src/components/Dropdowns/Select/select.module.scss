@@ -1,0 +1,24 @@
+
+.filterSelect {
+  top: calc( 100%  + .5rem);
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  max-height: 20rem;
+  overflow-y: auto;
+  .option {
+    font-weight: 500;
+    transition: .2s color;
+    &:hover {
+      color: rgba(217, 0, 182, 0.7);
+    }
+  }
+}
+.filterSelect::-webkit-scrollbar {
+  width: 4px;
+}
+.filterSelect::-webkit-scrollbar-thumb {
+  background: lightgray;
+}
+.selected {
+  color: #D900b6;
+}

@@ -1,0 +1,12 @@
+.featuresSlider {
+  max-width: 100%;
+}
+@media (max-width: 1050px) {
+  .featuresSection {
+    .featuresItems {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+  }
+}
